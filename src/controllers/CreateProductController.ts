@@ -9,6 +9,10 @@ export class CreateProductController {
                 name,
                 bar_code,
                 price
+            },
+            select: {
+                name: true,
+                price: true
             }
         })
         return res.json(product)
